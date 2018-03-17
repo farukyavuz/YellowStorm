@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3C99A2305364E3718CB8ADA /* Pods_YellowStorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167640FFD789885C17609A9C /* Pods_YellowStorm.framework */; };
 		EBBE63CC205D456B00612B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE63CB205D456B00612B94 /* AppDelegate.swift */; };
 		EBBE63CE205D456B00612B94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE63CD205D456B00612B94 /* ViewController.swift */; };
 		EBBE63D1205D456B00612B94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBE63CF205D456B00612B94 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		167640FFD789885C17609A9C /* Pods_YellowStorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowStorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5BC2698F2B1EFD903C6B8D /* Pods-YellowStorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowStorm.release.xcconfig"; path = "Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm.release.xcconfig"; sourceTree = "<group>"; };
+		80CBD89B192CB22DECA76722 /* Pods-YellowStorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowStorm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm.debug.xcconfig"; sourceTree = "<group>"; };
 		EBBE63C8205D456B00612B94 /* YellowStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YellowStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBE63CB205D456B00612B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBBE63CD205D456B00612B94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C99A2305364E3718CB8ADA /* Pods_YellowStorm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CD48A977FEF60091F9093A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80CBD89B192CB22DECA76722 /* Pods-YellowStorm.debug.xcconfig */,
+				5B5BC2698F2B1EFD903C6B8D /* Pods-YellowStorm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		73F5D5B813E766A30E69A1E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				167640FFD789885C17609A9C /* Pods_YellowStorm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBBE63BF205D456B00612B94 = {
 			isa = PBXGroup;
 			children = (
 				EBBE63CA205D456B00612B94 /* YellowStorm */,
 				EBBE63C9205D456B00612B94 /* Products */,
+				0CD48A977FEF60091F9093A9 /* Pods */,
+				73F5D5B813E766A30E69A1E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBBE63DA205D456B00612B94 /* Build configuration list for PBXNativeTarget "YellowStorm" */;
 			buildPhases = (
+				B4D0B895AFFD082D440BFB33 /* [CP] Check Pods Manifest.lock */,
 				EBBE63C4205D456B00612B94 /* Sources */,
 				EBBE63C5205D456B00612B94 /* Frameworks */,
 				EBBE63C6205D456B00612B94 /* Resources */,
+				B25542E9BBA978C08D5A858B /* [CP] Embed Pods Frameworks */,
+				9BDBE9FD7007E72B840D282D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BDBE9FD7007E72B840D282D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B25542E9BBA978C08D5A858B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D0B895AFFD082D440BFB33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YellowStorm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBBE63C4205D456B00612B94 /* Sources */ = {
@@ -211,7 +300,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -272,6 +361,7 @@
 		};
 		EBBE63DB205D456B00612B94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80CBD89B192CB22DECA76722 /* Pods-YellowStorm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +377,7 @@
 		};
 		EBBE63DC205D456B00612B94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B5BC2698F2B1EFD903C6B8D /* Pods-YellowStorm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
