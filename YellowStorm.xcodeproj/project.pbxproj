@@ -15,6 +15,10 @@
 		EB73F20F205EC82E00992638 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F20E205EC82E00992638 /* RoundedShadowButton.swift */; };
 		EB73F213205EDC5A00992638 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F211205EDC5A00992638 /* UIViewControllerExt.swift */; };
 		EB73F214205EDC5A00992638 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F212205EDC5A00992638 /* UIViewExt.swift */; };
+		EBAE1F14205EFC7600E14238 /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE1F13205EFC7600E14238 /* LeftSidePanelVC.swift */; };
+		EBAE1F16205F049300E14238 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE1F15205F049300E14238 /* ContainerVC.swift */; };
+		EBAE1F18205F050000E14238 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE1F17205F050000E14238 /* Constants.swift */; };
+		EBAE1F1B205F0DB700E14238 /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE1F1A205F0DB700E14238 /* CenterVCDelegate.swift */; };
 		EBBE63CC205D456B00612B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE63CB205D456B00612B94 /* AppDelegate.swift */; };
 		EBBE63CE205D456B00612B94 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE63CD205D456B00612B94 /* HomeVC.swift */; };
 		EBBE63D1205D456B00612B94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBE63CF205D456B00612B94 /* Main.storyboard */; };
@@ -33,6 +37,10 @@
 		EB73F20E205EC82E00992638 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		EB73F211205EDC5A00992638 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		EB73F212205EDC5A00992638 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		EBAE1F13205EFC7600E14238 /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
+		EBAE1F15205F049300E14238 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		EBAE1F17205F050000E14238 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EBAE1F1A205F0DB700E14238 /* CenterVCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
 		EBBE63C8205D456B00612B94 /* YellowStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YellowStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBE63CB205D456B00612B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBBE63CD205D456B00612B94 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -74,6 +82,9 @@
 		EB73F203205E8CF100992638 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EBBE63CD205D456B00612B94 /* HomeVC.swift */,
+				EBAE1F13205EFC7600E14238 /* LeftSidePanelVC.swift */,
+				EBAE1F15205F049300E14238 /* ContainerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,6 +117,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		EBAE1F19205F0DA700E14238 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EBAE1F1A205F0DB700E14238 /* CenterVCDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		EBBE63BF205D456B00612B94 = {
 			isa = PBXGroup;
 			children = (
@@ -127,12 +146,13 @@
 		EBBE63CA205D456B00612B94 /* YellowStorm */ = {
 			isa = PBXGroup;
 			children = (
+				EBAE1F19205F0DA700E14238 /* Protocol */,
+				EBAE1F17205F050000E14238 /* Constants.swift */,
 				EB73F210205EDC4E00992638 /* Extension */,
 				EB73F205205E8D0000992638 /* Model */,
 				EB73F204205E8CFB00992638 /* View */,
 				EB73F203205E8CF100992638 /* Controller */,
 				EBBE63CB205D456B00612B94 /* AppDelegate.swift */,
-				EBBE63CD205D456B00612B94 /* HomeVC.swift */,
 				EBBE63CF205D456B00612B94 /* Main.storyboard */,
 				EBBE63D2205D456B00612B94 /* Assets.xcassets */,
 				EBBE63D4205D456B00612B94 /* LaunchScreen.storyboard */,
@@ -287,6 +307,10 @@
 				EB73F20B205EAC0900992638 /* RoundedShadowView.swift in Sources */,
 				EBBE63CC205D456B00612B94 /* AppDelegate.swift in Sources */,
 				EB73F207205E905F00992638 /* GradientView.swift in Sources */,
+				EBAE1F14205EFC7600E14238 /* LeftSidePanelVC.swift in Sources */,
+				EBAE1F16205F049300E14238 /* ContainerVC.swift in Sources */,
+				EBAE1F1B205F0DB700E14238 /* CenterVCDelegate.swift in Sources */,
+				EBAE1F18205F050000E14238 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

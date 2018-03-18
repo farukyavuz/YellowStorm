@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  YellowStorm
 //
 //  Created by Faruk Yavuz on 17.03.2018.
