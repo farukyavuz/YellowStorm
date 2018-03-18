@@ -1,9 +1,9 @@
 //
 //  RoundedShadowButton.swift
-//  htchhkr-development
+//  YellowStorm
 //
-//  Created by Caleb Stultz on 4/29/17.
-//  Copyright © 2017 Caleb Stultz. All rights reserved.
+//  Created by Faruk Yavuz on 18.03.2018.
+//  Copyright © 2018 Faruk Yavuz. All rights reserved.
 //
 
 import UIKit
@@ -49,14 +49,12 @@ class RoundedShadowButton: UIButton {
             })
             self.isUserInteractionEnabled = false
         } else {
-           self.isUserInteractionEnabled = true
-            
+            self.isUserInteractionEnabled = true
             for subview in self.subviews {
                 if subview.tag == 21 {
                     subview.removeFromSuperview()
                 }
             }
-            
             UIView.animate(withDuration: 0.2, animations: { 
                 self.layer.cornerRadius = 5.0
                 self.frame = self.originalSize!

@@ -1,9 +1,9 @@
 //
 //  UIViewControllerExt.swift
-//  htchhkr-development
+//  YellowStorm
 //
-//  Created by Caleb Stultz on 4/30/17.
-//  Copyright © 2017 Caleb Stultz. All rights reserved.
+//  Created by Faruk Yavuz on 18.03.2018.
+//  Copyright © 2018 Faruk Yavuz. All rights reserved.
 //
 
 import UIKit

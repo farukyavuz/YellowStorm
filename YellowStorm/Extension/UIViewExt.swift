@@ -1,9 +1,9 @@
 //
 //  UIViewExt.swift
-//  htchhkr-development
+//  YellowStorm
 //
-//  Created by Caleb Stultz on 4/29/17.
-//  Copyright © 2017 Caleb Stultz. All rights reserved.
+//  Created by Faruk Yavuz on 18.03.2018.
+//  Copyright © 2018 Faruk Yavuz. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +19,7 @@ extension UIView {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
     
-    func keyboardWillChange(_ notification: NSNotification) {
+    @objc func keyboardWillChange(_ notification: NSNotification) {
         let duration = notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! Double
         let curve = notification.userInfo![UIKeyboardAnimationCurveUserInfoKey] as! UInt
         let curFrame = (notification.userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue

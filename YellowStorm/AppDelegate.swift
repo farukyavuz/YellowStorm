@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+//    fileprivate var containerVC = ContainerVC()
+//
+//    var MenuContainerVC: ContainerVC {
+//        return containerVC
+//    }
 
+    class func getAppDelegate() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    
+//        FirebaseApp.configure()
+        
+//        containerVC = ContainerVC()
+        
+//        window?.rootViewController = containerVC
+//        window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -40,7 +57,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B3C99A2305364E3718CB8ADA /* Pods_YellowStorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167640FFD789885C17609A9C /* Pods_YellowStorm.framework */; };
+		EB73F207205E905F00992638 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F206205E905F00992638 /* GradientView.swift */; };
+		EB73F209205E9E4F00992638 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F208205E9E4F00992638 /* RoundImageView.swift */; };
+		EB73F20B205EAC0900992638 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F20A205EAC0900992638 /* RoundedShadowView.swift */; };
+		EB73F20D205EB7BE00992638 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F20C205EB7BE00992638 /* CircleView.swift */; };
+		EB73F20F205EC82E00992638 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F20E205EC82E00992638 /* RoundedShadowButton.swift */; };
+		EB73F213205EDC5A00992638 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F211205EDC5A00992638 /* UIViewControllerExt.swift */; };
+		EB73F214205EDC5A00992638 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F212205EDC5A00992638 /* UIViewExt.swift */; };
 		EBBE63CC205D456B00612B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE63CB205D456B00612B94 /* AppDelegate.swift */; };
-		EBBE63CE205D456B00612B94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE63CD205D456B00612B94 /* ViewController.swift */; };
+		EBBE63CE205D456B00612B94 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE63CD205D456B00612B94 /* HomeVC.swift */; };
 		EBBE63D1205D456B00612B94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBE63CF205D456B00612B94 /* Main.storyboard */; };
 		EBBE63D3205D456B00612B94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBE63D2205D456B00612B94 /* Assets.xcassets */; };
 		EBBE63D6205D456B00612B94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBE63D4205D456B00612B94 /* LaunchScreen.storyboard */; };
@@ -19,9 +26,16 @@
 		167640FFD789885C17609A9C /* Pods_YellowStorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowStorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5BC2698F2B1EFD903C6B8D /* Pods-YellowStorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowStorm.release.xcconfig"; path = "Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm.release.xcconfig"; sourceTree = "<group>"; };
 		80CBD89B192CB22DECA76722 /* Pods-YellowStorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowStorm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm.debug.xcconfig"; sourceTree = "<group>"; };
+		EB73F206205E905F00992638 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		EB73F208205E9E4F00992638 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		EB73F20A205EAC0900992638 /* RoundedShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		EB73F20C205EB7BE00992638 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		EB73F20E205EC82E00992638 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		EB73F211205EDC5A00992638 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		EB73F212205EDC5A00992638 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		EBBE63C8205D456B00612B94 /* YellowStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YellowStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBE63CB205D456B00612B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBBE63CD205D456B00612B94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBBE63CD205D456B00612B94 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		EBBE63D0205D456B00612B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBBE63D2205D456B00612B94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBBE63D5205D456B00612B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +71,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB73F203205E8CF100992638 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB73F204205E8CFB00992638 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB73F20E205EC82E00992638 /* RoundedShadowButton.swift */,
+				EB73F20C205EB7BE00992638 /* CircleView.swift */,
+				EB73F20A205EAC0900992638 /* RoundedShadowView.swift */,
+				EB73F208205E9E4F00992638 /* RoundImageView.swift */,
+				EB73F206205E905F00992638 /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB73F205205E8D0000992638 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB73F210205EDC4E00992638 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB73F211205EDC5A00992638 /* UIViewControllerExt.swift */,
+				EB73F212205EDC5A00992638 /* UIViewExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		EBBE63BF205D456B00612B94 = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +127,12 @@
 		EBBE63CA205D456B00612B94 /* YellowStorm */ = {
 			isa = PBXGroup;
 			children = (
+				EB73F210205EDC4E00992638 /* Extension */,
+				EB73F205205E8D0000992638 /* Model */,
+				EB73F204205E8CFB00992638 /* View */,
+				EB73F203205E8CF100992638 /* Controller */,
 				EBBE63CB205D456B00612B94 /* AppDelegate.swift */,
-				EBBE63CD205D456B00612B94 /* ViewController.swift */,
+				EBBE63CD205D456B00612B94 /* HomeVC.swift */,
 				EBBE63CF205D456B00612B94 /* Main.storyboard */,
 				EBBE63D2205D456B00612B94 /* Assets.xcassets */,
 				EBBE63D4205D456B00612B94 /* LaunchScreen.storyboard */,
@@ -225,8 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBBE63CE205D456B00612B94 /* ViewController.swift in Sources */,
+				EB73F214205EDC5A00992638 /* UIViewExt.swift in Sources */,
+				EB73F20F205EC82E00992638 /* RoundedShadowButton.swift in Sources */,
+				EB73F20D205EB7BE00992638 /* CircleView.swift in Sources */,
+				EB73F213205EDC5A00992638 /* UIViewControllerExt.swift in Sources */,
+				EBBE63CE205D456B00612B94 /* HomeVC.swift in Sources */,
+				EB73F209205E9E4F00992638 /* RoundImageView.swift in Sources */,
+				EB73F20B205EAC0900992638 /* RoundedShadowView.swift in Sources */,
 				EBBE63CC205D456B00612B94 /* AppDelegate.swift in Sources */,
+				EB73F207205E905F00992638 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

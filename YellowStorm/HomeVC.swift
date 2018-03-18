@@ -25,7 +25,7 @@ enum ButtonAction {
     case endTrip
 }
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var actionBtn: RoundedShadowButton!
