@@ -48,10 +48,10 @@ class ContainerVC: UIViewController {
         
         showVC = screen
         
-//        if homeVC == nil {
-//            homeVC = UIStoryboard.homeVC()
-//            homeVC.delegate = self
-//        }
+        if homeVC == nil {
+            homeVC = UIStoryboard.homeVC()
+            homeVC.delegate = self
+        }
         
         presentingController = homeVC
         
@@ -80,7 +80,7 @@ class ContainerVC: UIViewController {
 
 extension ContainerVC: CenterVCDelegate {
     func toggleLeftPanel() {
-        let notAlreadyExpanded = (currentState != .leftPanelExpanded)
+        let notAlreadyExpanded = (currentState != .leftPanelExpanded)   //henüz genişletilmiş değil
         
         if notAlreadyExpanded {
             addLeftPanelViewController()
@@ -107,7 +107,7 @@ extension ContainerVC: CenterVCDelegate {
             animateStatusBar()
             
             setupWhiteCoverView()
-            currentState = .leftPanelExpanded
+            currentState = .leftPanelExpanded                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
             
             animateCenterPanelXPosition(targetPosition: centerController.view.frame.width - centerPanelExpandedOffset)
         } else {

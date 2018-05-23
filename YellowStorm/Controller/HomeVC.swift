@@ -34,7 +34,7 @@ class HomeVC: UIViewController {
 //    @IBOutlet weak var destinationCircle: CircleView!
     @IBOutlet weak var cancelBtn: UIButton!
     
-//    var delegate: CenterVCDelegate?
+    var delegate: CenterVCDelegate?
     var manager: CLLocationManager?
 //    var currentUserId = Auth.auth().currentUser?.uid
     var regionRadius: CLLocationDistance = 1000
