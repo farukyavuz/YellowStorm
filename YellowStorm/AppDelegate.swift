@@ -19,14 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var MenuContainerVC: ContainerVC {
         return containerVC
     }
-
-    class func getAppDelegate() -> AppDelegate {
-        return UIApplication.shared.delegate as! AppDelegate
-    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
-//        FirebaseApp.configure()
+        FirebaseApp.configure()
         
         containerVC = ContainerVC()
         
@@ -56,6 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    class func getAppDelegate() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
     }
 }
 

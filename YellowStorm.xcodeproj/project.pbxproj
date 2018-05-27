@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3C99A2305364E3718CB8ADA /* Pods_YellowStorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167640FFD789885C17609A9C /* Pods_YellowStorm.framework */; };
+		EB142A2D20BB6F07009032F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB142A2C20BB6F07009032F8 /* GoogleService-Info.plist */; };
 		EB54742820BAB51400E73F2C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54742720BAB51400E73F2C /* LoginVC.swift */; };
 		EB54742A20BAB59300E73F2C /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54742920BAB59300E73F2C /* RoundedCornerTextField.swift */; };
 		EB54742C20BAB5E600E73F2C /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54742B20BAB5E600E73F2C /* Alertable.swift */; };
@@ -33,6 +34,7 @@
 		167640FFD789885C17609A9C /* Pods_YellowStorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowStorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5BC2698F2B1EFD903C6B8D /* Pods-YellowStorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowStorm.release.xcconfig"; path = "Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm.release.xcconfig"; sourceTree = "<group>"; };
 		80CBD89B192CB22DECA76722 /* Pods-YellowStorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowStorm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm.debug.xcconfig"; sourceTree = "<group>"; };
+		EB142A2C20BB6F07009032F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB54742720BAB51400E73F2C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EB54742920BAB59300E73F2C /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 		EB54742B20BAB5E600E73F2C /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				EBBE63D2205D456B00612B94 /* Assets.xcassets */,
 				EBBE63D4205D456B00612B94 /* LaunchScreen.storyboard */,
 				EBBE63D7205D456B00612B94 /* Info.plist */,
+				EB142A2C20BB6F07009032F8 /* GoogleService-Info.plist */,
 			);
 			path = YellowStorm;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBBE63D6205D456B00612B94 /* LaunchScreen.storyboard in Resources */,
+				EB142A2D20BB6F07009032F8 /* GoogleService-Info.plist in Resources */,
 				EBBE63D3205D456B00612B94 /* Assets.xcassets in Resources */,
 				EBBE63D1205D456B00612B94 /* Main.storyboard in Resources */,
 			);
