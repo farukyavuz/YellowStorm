@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B3C99A2305364E3718CB8ADA /* Pods_YellowStorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167640FFD789885C17609A9C /* Pods_YellowStorm.framework */; };
+		EB54742820BAB51400E73F2C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54742720BAB51400E73F2C /* LoginVC.swift */; };
+		EB54742A20BAB59300E73F2C /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54742920BAB59300E73F2C /* RoundedCornerTextField.swift */; };
+		EB54742C20BAB5E600E73F2C /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54742B20BAB5E600E73F2C /* Alertable.swift */; };
 		EB73F207205E905F00992638 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F206205E905F00992638 /* GradientView.swift */; };
 		EB73F209205E9E4F00992638 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F208205E9E4F00992638 /* RoundImageView.swift */; };
 		EB73F20B205EAC0900992638 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73F20A205EAC0900992638 /* RoundedShadowView.swift */; };
@@ -30,6 +33,9 @@
 		167640FFD789885C17609A9C /* Pods_YellowStorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowStorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5BC2698F2B1EFD903C6B8D /* Pods-YellowStorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowStorm.release.xcconfig"; path = "Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm.release.xcconfig"; sourceTree = "<group>"; };
 		80CBD89B192CB22DECA76722 /* Pods-YellowStorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowStorm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YellowStorm/Pods-YellowStorm.debug.xcconfig"; sourceTree = "<group>"; };
+		EB54742720BAB51400E73F2C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EB54742920BAB59300E73F2C /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
+		EB54742B20BAB5E600E73F2C /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		EB73F206205E905F00992638 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		EB73F208205E9E4F00992638 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		EB73F20A205EAC0900992638 /* RoundedShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 				EBBE63CD205D456B00612B94 /* HomeVC.swift */,
 				EBAE1F13205EFC7600E14238 /* LeftSidePanelVC.swift */,
 				EBAE1F15205F049300E14238 /* ContainerVC.swift */,
+				EB54742720BAB51400E73F2C /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -97,6 +104,7 @@
 				EB73F20A205EAC0900992638 /* RoundedShadowView.swift */,
 				EB73F208205E9E4F00992638 /* RoundImageView.swift */,
 				EB73F206205E905F00992638 /* GradientView.swift */,
+				EB54742920BAB59300E73F2C /* RoundedCornerTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				EBAE1F1A205F0DB700E14238 /* CenterVCDelegate.swift */,
+				EB54742B20BAB5E600E73F2C /* Alertable.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -300,11 +309,14 @@
 			files = (
 				EB73F214205EDC5A00992638 /* UIViewExt.swift in Sources */,
 				EB73F20F205EC82E00992638 /* RoundedShadowButton.swift in Sources */,
+				EB54742820BAB51400E73F2C /* LoginVC.swift in Sources */,
 				EB73F20D205EB7BE00992638 /* CircleView.swift in Sources */,
 				EB73F213205EDC5A00992638 /* UIViewControllerExt.swift in Sources */,
 				EBBE63CE205D456B00612B94 /* HomeVC.swift in Sources */,
+				EB54742C20BAB5E600E73F2C /* Alertable.swift in Sources */,
 				EB73F209205E9E4F00992638 /* RoundImageView.swift in Sources */,
 				EB73F20B205EAC0900992638 /* RoundedShadowView.swift in Sources */,
+				EB54742A20BAB59300E73F2C /* RoundedCornerTextField.swift in Sources */,
 				EBBE63CC205D456B00612B94 /* AppDelegate.swift in Sources */,
 				EB73F207205E905F00992638 /* GradientView.swift in Sources */,
 				EBAE1F14205EFC7600E14238 /* LeftSidePanelVC.swift in Sources */,

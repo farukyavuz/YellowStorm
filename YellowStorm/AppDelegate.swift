@@ -14,11 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-//    fileprivate var containerVC = ContainerVC()
-//
-//    var MenuContainerVC: ContainerVC {
-//        return containerVC
-//    }
+    fileprivate var containerVC = ContainerVC()
+
+    var MenuContainerVC: ContainerVC {
+        return containerVC
+    }
 
     class func getAppDelegate() -> AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
@@ -28,10 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 //        FirebaseApp.configure()
         
-//        containerVC = ContainerVC()
+        containerVC = ContainerVC()
         
-//        window?.rootViewController = containerVC
-//        window?.makeKeyAndVisible()
+        window?.rootViewController = containerVC
+        window?.makeKeyAndVisible()
         
         return true
     }

@@ -28,7 +28,6 @@ class ContainerVC: UIViewController {
     var currentState: SlideOutState = .collapsed {
         didSet {
             let shouldShowShadow = (currentState != .collapsed)
-            
             shouldShowShadowForCenterViewController(status: shouldShowShadow)
         }
     }
@@ -101,7 +100,7 @@ extension ContainerVC: CenterVCDelegate {
         sidePanelController.didMove(toParentViewController: self)
     }
     
-    func animateLeftPanel(shouldExpand: Bool) {
+    @objc func animateLeftPanel(shouldExpand: Bool) {
         if shouldExpand {
             isHidden = !isHidden
             animateStatusBar()
@@ -131,18 +130,18 @@ extension ContainerVC: CenterVCDelegate {
     }
     
     func setupWhiteCoverView() {
-//        let whiteCoverView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
-//        whiteCoverView.alpha = 0.0
-//        whiteCoverView.backgroundColor = UIColor.white
-//        whiteCoverView.tag = 25
-//
-//        self.centerController.view.addSubview(whiteCoverView)
-//        whiteCoverView.fadeTo(alphaValue: 0.75, withDuration: 0.2)
-//
-//        tap = UITapGestureRecognizer(target: self, action: #selector(animateLeftPanel(shouldExpand:)))
-//        tap.numberOfTapsRequired = 1
-//
-//        self.centerController.view.addGestureRecognizer(tap)
+        let whiteCoverView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        whiteCoverView.alpha = 0.0
+        whiteCoverView.backgroundColor = UIColor.white
+        whiteCoverView.tag = 25
+
+        self.centerController.view.addSubview(whiteCoverView)
+        whiteCoverView.fadeTo(alphaValue: 0.75, withDuration: 0.2)
+
+        tap = UITapGestureRecognizer(target: self, action: #selector(animateLeftPanel(shouldExpand:)))
+        tap.numberOfTapsRequired = 1
+
+        self.centerController.view.addGestureRecognizer(tap)
     }
     
     func hideWhiteCoverView() {

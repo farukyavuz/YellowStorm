@@ -46,10 +46,62 @@ class HomeVC: UIViewController {
     var route: MKRoute?
     var selectedItemPlacemark: MKPlacemark? = nil
     var actionForButton: ButtonAction = .requestRide
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        manager = CLLocationManager()
+//        manager?.delegate = self
+//        manager?.desiredAccuracy = kCLLocationAccuracyBest
+//
+//        checkLocationAuthStatus()
+//
+//        mapView.delegate = self
+//        destinationTextField.delegate = self
+//
+//        centerMapOnUserLocation()
+//
+//        DataService.instance.REF_DRIVERS.observe(.value, with: { (snapshot) in
+//            self.loadDriverAnnotationsFromFB()
+//
+//            DataService.instance.passengerIsOnTrip(passengerKey: self.currentUserId!, handler: { (isOnTrip, driverKey, tripKey) in
+//                if isOnTrip == true {
+//                    self.zoom(toFitAnnotationsFromMapView: self.mapView, forActiveTripWithDriver: true, withKey: driverKey)
+//                }
+//            })
+//        })
+//
+//        cancelBtn.alpha = 0.0
+        
+        self.view.addSubview(revealingSplashView)
+        revealingSplashView.animationType = SplashAnimationType.heartBeat
+        revealingSplashView.startAnimation()
+        
+        revealingSplashView.heartAttack = true
+        
+//        UpdateService.instance.observeTrips { (tripDict) in
+//            if let tripDict = tripDict {
+//                let pickupCoordinateArray = tripDict[USER_PICKUP_COORDINATE] as! NSArray
+//                let tripKey = tripDict[USER_PASSENGER_KEY] as! String
+//                let acceptanceStatus = tripDict[TRIP_IS_ACCEPTED] as! Bool
+//
+//                if acceptanceStatus == false {
+//                    DataService.instance.driverIsAvailable(key: self.currentUserId!, handler: { (available) in
+//                        if let available = available {
+//                            if available == true {
+//                                let storyboard = UIStoryboard(name: MAIN_STORYBOARD, bundle: Bundle.main)
+//                                let pickupVC = storyboard.instantiateViewController(withIdentifier: VC_PICKUP) as? PickupVC
+//                                pickupVC?.initData(coordinate: CLLocationCoordinate2D(latitude: pickupCoordinateArray[0] as! CLLocationDegrees, longitude: pickupCoordinateArray[1] as! CLLocationDegrees), passengerKey: tripKey)
+//                                self.present(pickupVC!, animated: true, completion: nil)
+//                            }
+//                        }
+//                    })
+//                }
+//            }
+//        }
     }
+    
+    
     
     func centerMapOnUserLocation() {
 //        let coordinateRegion = MKCoordinateRegionMakeWithDistance(mapView.userLocation.coordinate, regionRadius * 2.0, regionRadius * 2.0)
@@ -99,7 +151,7 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func menuBtnWasPressed(_ sender: Any) {
-//        delegate?.toggleLeftPanel()
+        delegate?.toggleLeftPanel()
     }
     
     func buttonSelector(forAction action: ButtonAction) {
