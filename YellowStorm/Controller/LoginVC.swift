@@ -9,8 +9,8 @@
 import Foundation
 import Firebase
 
-class LoginVC: UIViewController {
-//class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
+//class LoginVC: UIViewController {
+class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
     
     @IBOutlet weak var emailField: RoundedCornerTextField!
     @IBOutlet weak var passwordField: RoundedCornerTextField!
@@ -19,12 +19,12 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //emailField.delegate = self
-        //passwordField.delegate = self
+        emailField.delegate = self
+        passwordField.delegate = self
         view.bindtoKeyboard()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleScreenTap(sender:)))
-        self.view.addGestureRecognizer(tap)
+        self.view.addGestureRecognizer(tap)        
     }
     
     @objc func handleScreenTap(sender: UITapGestureRecognizer) {
