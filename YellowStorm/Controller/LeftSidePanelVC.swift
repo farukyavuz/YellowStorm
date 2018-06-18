@@ -11,17 +11,16 @@ import Firebase
 
 class LeftSidePanelVC: UIViewController {
 
-//    let appDelegate = AppDelegate.getAppDelegate()
-//
-//    let currentUserId = Auth.auth().currentUser?.uid
-//
-//    @IBOutlet weak var userEmailLbl: UILabel!
-//    @IBOutlet weak var userAccountTypeLbl: UILabel!
-//    @IBOutlet weak var userImageView: RoundImageView!
-//    @IBOutlet weak var loginOutBtn: UIButton!
-//    @IBOutlet weak var pickupModeSwitch: UISwitch!
-//    @IBOutlet weak var pickupModeLbl: UILabel!
-    
+    let appDelegate = AppDelegate.getAppDelegate()
+    //let currentUserId = Auth.auth().currentUser?.uid
+
+    @IBOutlet weak var pickupModeSwitch: UISwitch!
+    @IBOutlet weak var pickupModeLbl: UILabel!
+    @IBOutlet weak var userImageView: RoundImageView!
+    @IBOutlet weak var userEmailLbl: UILabel!
+    @IBOutlet weak var userAccountTypeLbl: UILabel!
+    @IBOutlet weak var loginOutBtn: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -29,10 +28,10 @@ class LeftSidePanelVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        pickupModeSwitch.isOn = false
-//        pickupModeSwitch.isHidden = true
-//        pickupModeLbl.isHidden = true
-//
+        pickupModeSwitch.isOn = false
+        pickupModeSwitch.isHidden = true
+        pickupModeLbl.isHidden = true
+
 //        observePassengersAndDrivers()
 //
 //        if Auth.auth().currentUser == nil {
@@ -48,32 +47,32 @@ class LeftSidePanelVC: UIViewController {
 //        }
     }
     
-//    func observePassengersAndDrivers() {
-//        DataService.instance.REF_USERS.observeSingleEvent(of: .value, with: { (snapshot) in
-//            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
-//                for snap in snapshot {
-//                    if snap.key == FIRAuth.auth()?.currentUser?.uid {
-//                        self.userAccountTypeLbl.text = ACCOUNT_TYPE_PASSENGER
-//                    }
-//                }
-//            }
-//        })
-//
-//        DataService.instance.REF_DRIVERS.observeSingleEvent(of: .value, with: { (snapshot) in
-//            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
-//                for snap in snapshot {
-//                    if snap.key == FIRAuth.auth()?.currentUser?.uid {
-//                        self.userAccountTypeLbl.text = ACCOUNT_TYPE_DRIVER
-//                        self.pickupModeSwitch.isHidden = false
-//
-//                        let switchStatus = snap.childSnapshot(forPath: ACCOUNT_PICKUP_MODE_ENABLED).value as! Bool
-//                        self.pickupModeSwitch.isOn = switchStatus
-//                        self.pickupModeLbl.isHidden = false
-//                    }
-//                }
-//            }
-//        })
-//    }
+    func observePassengersAndDrivers() {
+        DataService.instance.REF_USERS.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for snap in snapshot {
+                    if snap.key == Auth.auth().currentUser?.uid {
+                        self.userAccountTypeLbl.text = ACCOUNT_TYPE_PASSENGER
+                    }
+                }
+            }
+        })
+
+        DataService.instance.REF_DRIVERS.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for snap in snapshot {
+                    if snap.key == Auth.auth().currentUser?.uid {
+                        self.userAccountTypeLbl.text = ACCOUNT_TYPE_DRIVER
+                        self.pickupModeSwitch.isHidden = false
+
+                        let switchStatus = snap.childSnapshot(forPath: ACCOUNT_PICKUP_MODE_ENABLED).value as! Bool
+                        self.pickupModeSwitch.isOn = switchStatus
+                        self.pickupModeLbl.isHidden = false
+                    }
+                }
+            }
+        })
+    }
     
 //    @IBAction func switchWasToggled(_ sender: Any) {
 //        if pickupModeSwitch.isOn {

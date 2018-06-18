@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -284,8 +284,9 @@
                                                     </segments>
                                                     <color key="tintColor" red="0.84705882349999995" green="0.2784313725" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                                 </segmentedControl>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEg-zW-Xq9" customClass="RoundedCornerTextField" customModule="YellowStorm" customModuleProvider="target">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEg-zW-Xq9" customClass="RoundedCornerTextField" customModule="YellowStorm" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="220" width="360.5" height="60"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="yDq-bo-y1e"/>
                                                     </constraints>
@@ -293,8 +294,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hgy-lo-LQm" customClass="RoundedCornerTextField" customModule="YellowStorm" customModuleProvider="target">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hgy-lo-LQm" customClass="RoundedCornerTextField" customModule="YellowStorm" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="300" width="360.5" height="60"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="b9n-Vj-8hK"/>
                                                     </constraints>
@@ -430,6 +432,48 @@
                                     <action selector="signUpLoginBtnWasPressed:" destination="7VJ-rO-FC8" eventType="touchUpInside" id="vU4-ac-cyH"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v44-Ud-0KH">
+                                <rect key="frame" x="16" y="414" width="200" height="180"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uJo-2G-6vY">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="55.5"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2QX-1l-y5c">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup Mode Enabled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAT-SE-afK">
+                                                <rect key="frame" x="0.0" y="36" width="143" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="ASJ-a0-WsN" customClass="RoundImageView" customModule="YellowStorm" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="65.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="G6N-wi-JtV"/>
+                                            <constraint firstAttribute="width" constant="50" id="JR2-as-T2h"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email@google.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OD2-qS-eld">
+                                        <rect key="frame" x="0.0" y="125.5" width="159.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOUNT TYPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRM-Py-W37">
+                                        <rect key="frame" x="0.0" y="160.5" width="106" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="H9W-fo-r1B"/>
+                                    <constraint firstAttribute="width" constant="200" id="rgi-lb-OUJ"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -437,16 +481,26 @@
                             <constraint firstItem="K8K-T3-4U7" firstAttribute="leading" secondItem="aas-7p-VPi" secondAttribute="leading" id="DVK-7q-Bfv"/>
                             <constraint firstItem="jyh-Wr-8XS" firstAttribute="leading" secondItem="aas-7p-VPi" secondAttribute="leading" constant="16" id="Iry-dd-12X"/>
                             <constraint firstItem="aas-7p-VPi" firstAttribute="bottom" secondItem="jyh-Wr-8XS" secondAttribute="bottom" constant="20" id="OpY-mB-rUb"/>
+                            <constraint firstItem="v44-Ud-0KH" firstAttribute="leading" secondItem="aas-7p-VPi" secondAttribute="leading" constant="16" id="WuQ-vC-mhN"/>
                             <constraint firstItem="K8K-T3-4U7" firstAttribute="trailing" secondItem="aas-7p-VPi" secondAttribute="trailing" id="XkW-ix-rXT"/>
                             <constraint firstItem="Eq2-rb-oOb" firstAttribute="leading" secondItem="aas-7p-VPi" secondAttribute="leading" constant="16" id="lsu-dk-qR0"/>
                             <constraint firstItem="Eq2-rb-oOb" firstAttribute="top" secondItem="K8K-T3-4U7" secondAttribute="bottom" constant="20" id="omx-Yv-dSq"/>
+                            <constraint firstItem="jyh-Wr-8XS" firstAttribute="top" secondItem="v44-Ud-0KH" secondAttribute="bottom" constant="8" id="yf2-Ac-OPt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aas-7p-VPi"/>
                     </view>
+                    <connections>
+                        <outlet property="loginOutBtn" destination="jyh-Wr-8XS" id="F0s-qu-iWe"/>
+                        <outlet property="pickupModeLbl" destination="eAT-SE-afK" id="PEw-zy-ZaS"/>
+                        <outlet property="pickupModeSwitch" destination="2QX-1l-y5c" id="Gqs-7K-OBH"/>
+                        <outlet property="userAccountTypeLbl" destination="LRM-Py-W37" id="QsH-NA-m6T"/>
+                        <outlet property="userEmailLbl" destination="OD2-qS-eld" id="d9O-da-cui"/>
+                        <outlet property="userImageView" destination="ASJ-a0-WsN" id="HMY-e4-ub4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qN8-LR-3wy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="706" y="30"/>
+            <point key="canvasLocation" x="704.79999999999995" y="29.23538230884558"/>
         </scene>
     </scenes>
     <resources>
